@@ -70,6 +70,32 @@ html body .site-shell,html body .site-shell *{font-family:Inter,Arial,sans-serif
 @media(max-width:760px){.pv-section{padding:75px 22px}.pv-title{font-size:43px!important;letter-spacing:-.05em!important}.pv-kicker{font-size:9px!important;margin-bottom:19px!important}.pv-deck{font-size:15px!important}.pv-domains{gap:42px;grid-template-columns:1fr;margin-top:40px}.pv-domain{padding:19px 8px 0}.pv-domain-art{height:260px}.pv-domain-art img{width:280px;height:280px}.pv-domain h3{font-size:38px}.pv-domain-links{flex-direction:row;font-size:11px;gap:12px}.pv-domain-links a{gap:10px;font-size:11px}.pv-runtime-spine{display:none}.pv-runtime-caption{font-size:11px;gap:14px;margin-top:40px}.pv-controls{height:auto}.pv-controls-pin{position:relative;height:850px;min-height:0;padding:64px 22px 30px}.pv-control-copy{margin-top:24px;max-width:100%}.pv-control-copy h2{font-size:45px;line-height:1.03}.pv-control-copy p{margin-top:22px;font-size:14px}.pv-control-link{font-size:12px;margin-top:2px}.pv-control-canvas{width:110%;left:-5%;right:auto;top:37%;bottom:13%;max-height:420px}.pv-control-bottom{left:22px;right:22px;bottom:36px}.pv-control-bottom button{font-size:12px;gap:9px;padding-top:22px}.pv-control-bottom button span{font-size:9px}.pv-control-counter{font-size:10px}.pv-request{font-size:10px;min-width:140px;padding:12px}.pv-request-pass,.pv-request-stop{left:7%}.pv-boundary-label{font-size:8px;left:37%}.pv-gate-exit{right:7%;gap:8px;font-size:9px}.pv-gate-exit i{width:22px}.pv-private-caption{font-size:7px;gap:8px}.pv-orbit-label{font-size:10px;padding:8px 11px}.pv-fixed-boundary{left:18%;width:66%}.pv-fixed-boundary>span{font-size:8px;padding:0 7px}.pv-loop-label{font-size:10px;padding:8px 12px}}
 @media(prefers-reduced-motion:reduce){.pv-controls{height:auto}.pv-controls-pin{position:relative}.pv-controls *, .pv-section *, .pv-section *:after{animation:none!important;transition:none!important}.pv-ready .pv-reveal{opacity:1;transform:none}.pv-gate-exit{opacity:1}.pv-request-pass{opacity:1;transform:none}}
 
+/* Privacy safeguards follow the same quiet, open layout as the runtime copy. */
+#privacy>p{max-width:475px;margin-top:24px}
+.pv-privacy-points{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:17px;max-width:430px}
+.pv-privacy-points li{display:flex;align-items:center;gap:16px}
+.pv-privacy-points svg{width:23px;height:23px;flex:none;color:#84edb7}
+.pv-privacy-points h3{font:500 15px/1.3 Inter,Arial,sans-serif;letter-spacing:0;margin:0;color:#d5f5e2}
+.pv-control-copy .pv-privacy-points p{font-size:13px;line-height:1.4;margin:4px 0 0;color:#88b59e}
+#privacy .pv-control-link{margin-top:24px}
+#improvement{padding-top:64px}
+@media(min-width:761px) and (max-height:800px){.pv-controls-pair .pv-control-copy{margin-top:32px}.pv-privacy-points{gap:13px;margin-top:22px}#privacy .pv-control-link{margin-top:20px}}
+@media(max-width:1000px){#privacy>p{max-width:360px}.pv-privacy-points{gap:15px}#improvement{padding-top:58px}}
+@media(min-width:761px) and (max-width:1000px){.pv-controls-pair[data-step="1"] .pv-control-canvas{right:-3%}}
+@media(max-width:760px){
+ .pv-controls-pair .pv-controls-pin{height:auto;min-height:0}
+ .pv-controls-pair .pv-control-copy{min-height:405px}
+ .pv-controls-pair .pv-control-canvas{position:relative;left:-5%;right:auto;top:auto;bottom:auto;width:110%;height:350px;max-height:none;margin-top:10px}
+ .pv-controls-pair .pv-control-bottom{position:relative;left:auto;right:auto;bottom:auto;margin-top:22px}
+ #privacy>p{margin-top:22px;max-width:440px}
+ .pv-privacy-points{margin-top:24px;gap:15px;max-width:none}
+ .pv-privacy-points li{gap:13px}
+ .pv-privacy-points h3{font-size:14px}
+ .pv-control-copy .pv-privacy-points p{font-size:12px;margin-top:3px}
+ #privacy .pv-control-link{margin-top:22px}
+ #improvement{padding-top:64px}
+}
+
 /* Remove decorative captions while retaining the original opening renderer. */
 .vx-kicker,.vx-chapter-copy>small,.vx-hero-steps b,.vx-scroll-hint>span:not(.vx-scroll-line),#home-original .eyebrow{display:none!important}
 .vx-partner::before,.vx-trust-scene::before{content:none!important;display:none!important}
