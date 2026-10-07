@@ -1,0 +1,12 @@
+{
+  "name": "vishwa-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:preview": "node scripts/build.mjs --preview",
+    "start": "node scripts/serve.mjs"
+  }
+}
